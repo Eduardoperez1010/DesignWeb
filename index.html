@@ -1,25 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">     
+     <title>Mi sitio web</title>    
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://use.fontawesome.com/b5b1b6685f.js"></script>
 	<link rel="stylesheet" type="text/css" href="appearance.css">
-	<title>Document</title>
+
+	<title>Pagina Web Responsive</title>
 </head>
 <body>
 	<nav id="navbar">
-		<ul class="list_sm">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="services.html">Servicios</a></li>
-			<li><a href="about.html">Acerca de</a></li>
-			<li><a href="contact.html">Contacto</a></li>
-		</ul>		
 		<div class="myicon">
-		<i class="fa fa-bars" aria-hidden="true"></i>	
+			<i class="fa fa-bars" aria-hidden="true"></i>	
 		</div>
+		<ul class="list_sm">
+			<li><a href="/index.html">Inicio</a></li>
+			<li><a href="/services.html">Servicios</a></li>
+			<li><a href="/about.html">Acerca de</a></li>
+			<li><a href="/contact.html">Contacto</a></li>
+		</ul>				
 	</nav>
 	<div id="content">
 		<header>
@@ -46,7 +48,7 @@
 		</section>
 		<aside>
 			<h2>Sidebar</h2>
-			<a href="https://placeholder.com"><img src="https://placeholder.com/150x100 "></a>
+            <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150"></a>			
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
 
 			<p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
@@ -55,6 +57,33 @@
 			<p align="center">  Copyright (c) 2020</p>
 		</footer>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// ponemos el codigoo javascript que utiliza JQuery		
+			// Configurar el inicio
+			configurarInicio();
+			$('.myicon').click(function(e){
+				// console.dir(e);
+				// alert('prueba');
+				$('#navbar ul').toggleClass('list_sm');
+			})
+			function configurarInicio(){
+				var urlPath = window.location.pathname;
+				console.log(urlPath);
+				$('nav a').each(function(){
+					// console.log($(this));
+					var href = $(this).attr('href');
+					console.log(href);
+					var indice =urlPath-length - href.length;		
+					console.log(urlPath.substring(indice));
+					if(urlPath.substring(indice) === href){
+						console.log('match');
+					}
+				})
+			}
+		})			
+	</script>
 </body>
 </html>
 
