@@ -7,31 +7,34 @@ a{
 	color: dodgerblue;
 }
 a:hover{
-text-decoration: underline;
-color: darkblue
+	text-decoration: underline;
+	color: darkblue;	
 }
 img{
 
-	width: 100%
+	width: 100%;
 }
 #navbar{
 	background-color: #000;
-	position: absolute;
-	left: 0;
-	top 0;
-	width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
 }
 #navbar ul{
-	list-style-type: none;
+	list-style-type: none;	
 	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	z-index: 100;	
+	padding: 0;	
+}
+.list_sm{
+	display: block;
 }
 #navbar li{
 	float: left;	
 }
-
 #navbar li a{
 	padding: 20px;
 	display: inline-block;
@@ -45,7 +48,7 @@ img{
 	color: black;
 }
 
-.myicono{
+.myicon{
 	color: aliceblue;
 	font-size: 1.5em;
 	padding: 10px;
@@ -90,10 +93,8 @@ img{
 	clear: both;
 	width: 100%;
 	background-color: #ddd;
-	/*padding: 10px 20px;*/
-	/*border: 1px solid;*/
-	/*border-radius: 1em;*/
-	height: 100px;
+	text-align: center;
+	height: 100px; 
 	padding: 25px;
 }
 
@@ -157,5 +158,21 @@ img{
 	#content footer{
 		width: auto;
 		background-color: #E892F7;
+	}
+	.list_sm{
+		display: none;
+	}
+	#navbar li{
+		float: none;
+		display: block;
+	}
+	#navbar li a{
+		padding: 5px;
+		text-align: left;
+		width: 100%;
+	}
+	.myicon{
+		display: block;
+		text-align: right;		
 	}
 }
