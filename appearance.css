@@ -16,6 +16,10 @@ img{
 }
 #navbar{
 	background-color: #000;
+	position: absolute;
+	left: 0;
+	top 0;
+	width: 100%;
 }
 #navbar ul{
 	list-style-type: none;
@@ -29,7 +33,7 @@ img{
 }
 
 #navbar li a{
-	padding: 10px 5px;
+	padding: 20px;
 	display: inline-block;
 	text-decoration: none;
 	font-size: 1em;
@@ -46,4 +50,46 @@ img{
 	font-size: 1.5em;
 	padding: 10px;
 	display: none;
+}
+#content{
+	
+	max-width: 1180px;
+	position: relative;
+	top: 80px;
+	margin: 0 auto;
+}
+#content header{
+	/*border: 1px solid;*/
+	height: 120px;
+	padding: 10px 20px;
+	background-color: #ddd;
+	border-radius: 1em;
+}
+#first{
+	/*border: 1px solid;*/
+	width: 40%;
+	float: left;
+	padding: 5px;
+}
+#second{
+	/*border: 1px solid;*/
+	width: 40%;
+	float: left;
+	padding: 5px;
+}
+#content aside{
+	/*border: 1px solid;*/
+	width: 20%;
+	float: left;
+	padding: 5px;
+}
+#content footer{
+	clear: both;
+	width: 100%;
+	background-color: #ddd;
+	/*padding: 10px 20px;*/
+	/*border: 1px solid;*/
+	/*border-radius: 1em;*/
+	height: 100px;
+	padding: 25px;
 }
