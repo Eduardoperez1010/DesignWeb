@@ -275,29 +275,29 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
 	#content header{
 		padding: 0;
 		border-radius: 0;
-		background-color: #F27979;
+		/*background-color: #F27979;*/
 	}
 	#first{
 		padding: 3%;
 		width: 45%;
-		background-color: #62F376;
+		/*background-color: #62F376;*/
 	}
 	#second{
 		float: right;
 		padding: 3%;
 		width: 45%;	
-		background-color: #6496F3;
+		/*background-color: #6496F3;*/
 	}
 	#content aside{
 		clear: both;
 		padding: 10%;
 		width: 100%;
-		background-color: #F7F68A;	
+		/*background-color: #F7F68A;	*/
 	}
 	#content footer{
 		width: 100%;
 		padding: 0;
-		background-color: #E892F7;
+		/*background-color: #E892F7;*/
 	}
 }
 
@@ -310,22 +310,22 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
 		width: auto;
 		float: none;
 		margin: 0px;
-		background-color: #68A8FE;
+		/*background-color: #68A8FE;*/
 	}
 	#second{
 		width: auto;
 		float: none;
 		margin: 0px;
-		background-color: #68A8FE;
+		/*background-color: #68A8FE;*/
 	}
 	#content aside{
-	padding: 0;
-	width: auto;
-	background-color: #68A8FE;
+		padding: 0;
+		width: auto;
+		/*background-color: #68A8FE;*/
 	}
 	#content footer{
 		width: auto;
-		background-color: #E892F7;
+		/*background-color: #E892F7;*/
 	}
 	.list_sm{
 		display: none;
