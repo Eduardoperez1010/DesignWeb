@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
-	background-color: #EFE4E4;
+	background-color: #C7E0F8;
 	color: #333;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -12,10 +12,11 @@ a:hover{
 	text-decoration: underline;
 	color: darkblue;	
 }
-img{
 
-	width: 100%;
+img{
+	width: 100%;	
 }
+
 #navbar{
 	background-color: #000;
     position: absolute;
@@ -31,9 +32,14 @@ img{
 	margin: 0;
 	padding: 0;	
 }
-/*.list_sm{
-	display: block;
-}*/
+h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+/*####################################################*/
+
+/*####################################################*/
+
 #navbar li{
 	float: left;	
 }
@@ -100,6 +106,7 @@ button{
 	border-radius: 1em;
 	/*margin: 20px;*/
 }
+
 #first{
 	/*border: 1px solid;*/
 	width: 40%;
@@ -194,6 +201,7 @@ button{
 	#navbar li{
 		float: none;
 		display: block;
+
 	}
 	#navbar li a{
 		padding: 5px;
